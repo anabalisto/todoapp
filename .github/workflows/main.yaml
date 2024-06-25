@@ -24,7 +24,7 @@ jobs:
       run: |
         aws deploy create-deployment \
           --application-name listoapp \
-          --deployment-group-name listodeploy \
+          --deployment-group-name listo-deployment-group \
           --github-location repository=${{ github.repository }},commitId=${{ github.sha }} 
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
