@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-repo.git'
+                git branch: 'listo', url: 'https://github.com/anabalisto/todoapp.git'
             }
         }
 
@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Python App') {
             steps {
-                sh 'python3 manage.py'
+                sh 'python manage.py'
             }
         }
     }
