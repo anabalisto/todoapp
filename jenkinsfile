@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Python App') {
             steps {
-                sh 'python manage.py'
+                sh 'python3 manage.py'
             }
         }
     }
